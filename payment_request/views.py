@@ -9,10 +9,9 @@ class PaymentView(APIView):
         serializer = PaymentSerializer(data=request.data)
 
         if serializer.is_valid():
-            # Guarda el objeto Payment en la base de datos
+            
             serializer.save()
 
-            # Retorna una respuesta exitosa
             return Response({'message': 'Pago procesado correctamente'}, status=status.HTTP_201_CREATED)
         else:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

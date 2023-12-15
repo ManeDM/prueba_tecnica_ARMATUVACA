@@ -8,3 +8,4 @@ class PaymentSerializer(serializers.ModelSerializer):
     class Meta:
         model = PaymentInfo
         fields = '__all__'
+
