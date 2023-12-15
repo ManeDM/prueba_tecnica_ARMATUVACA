@@ -20,14 +20,16 @@
 
 <p>To run this server, you must have Django installed on your computer. Next, you need to clone this repository and then navigate to the project directory and run the following command lines</p>
 
-<textarea readonly onclick="this.select()" rows="2" cols="1">pip install -r requirements.txt
-python manage.py runserver</textarea>
+<pre>
+pip install -r requirements.txt
+python manage.py runserver
+</pre>
 
 <p>This will install all the necessary dependencies and start the Django development server. You can then access the application by navigating to http://127.0.0.1:8000/api/payment-tc/process/ in your web browser.</p>
 
 <p>Finally, in the test environment for HTTP requests of Django Restframework, you can pass a JSON object that looks like the following example</p>
 
-<textarea>
+<pre>
 {
     "name": "ALberto",
     "surname": "Ramirez",
@@ -36,6 +38,6 @@ python manage.py runserver</textarea>
     "total_value": 60000,
     "extra_description": "Información adicional opcional"
 }
-</textarea>
+</pre>
 
 
